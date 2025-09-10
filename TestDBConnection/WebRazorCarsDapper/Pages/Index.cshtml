@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+
+<h1>Cars (Top 5)</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>License Plate</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var car in Model.Cars)
+    {
+        <tr>
+            <td>@car.Licenseplate</td>
+            <td>@car.Make</td>
+            <td>@car.Model</td>
+            <td>@car.Color</td>
+        </tr>
+    }
+    </tbody>
+</table>
